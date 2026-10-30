@@ -135,7 +135,7 @@ function Pulsera() {
   );
 }
 
-const appUrl = new URL("/ingresar", import.meta.env.VITE_APP_URL || "http://localhost:5173").toString();
+const appUrl = new URL("/ingresar", import.meta.env.VITE_APP_URL || "https://nonos-app.vercel.app").toString();
 
 // landing pública de NONOS: qué es, cómo funciona y acceso a la plataforma
 export default function Landing() {
