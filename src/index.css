@@ -6,7 +6,10 @@
 }
 
 * { box-sizing: border-box; }
-html { font-family: "Atkinson Hyperlegible Next", sans-serif; }
+html {
+  font-family: "Atkinson Hyperlegible Next", sans-serif;
+  scroll-behavior: smooth;
+}
 body { margin: 0; background: #f7f9ff; }
 #root { min-height: 100vh; }
 
@@ -138,6 +141,10 @@ body { margin: 0; background: #f7f9ff; }
 
 /* quien prefiere menos movimiento ve la pulsera quieta, con el pulso fijo */
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
 
   .landing-flotar,
   .landing-onda,
