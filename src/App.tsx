@@ -1,4 +1,3 @@
-import { MdOutlineHealthAndSafety } from "react-icons/md";
 import fotoPulsera from "./assets/pulsera.png";
 
 // datos que mide la pulsera: cada uno se muestra unos segundos y pasa al siguiente (animación en index.css)
@@ -135,7 +134,10 @@ function Pulsera() {
   );
 }
 
-const appUrl = new URL("/ingresar", import.meta.env.VITE_APP_URL || "https://nonos-app.vercel.app").toString();
+const appUrl = new URL(
+  "/ingresar",
+  import.meta.env.VITE_APP_URL || "https://nonos-app.vercel.app",
+).toString();
 
 // landing pública de NONOS: qué es, cómo funciona y acceso a la plataforma
 export default function Landing() {
@@ -146,10 +148,7 @@ export default function Landing() {
           href="/"
           className="flex items-center gap-2 text-2xl font-extrabold tracking-tight"
         >
-          <MdOutlineHealthAndSafety
-            aria-hidden="true"
-            className="size-9 text-[#0B5FFF]"
-          />
+          <img src="/Favicon.png" alt="Logotipo NONOS" className="size-6" />
           NONOS
         </a>
         <a
@@ -405,10 +404,7 @@ export default function Landing() {
 
       <footer className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-4 px-5 py-8 text-base text-[#4A5866] sm:px-8">
         <span className="flex items-center gap-2 font-bold text-[#0E1D28]">
-          <MdOutlineHealthAndSafety
-            aria-hidden="true"
-            className="size-6 text-[#0B5FFF]"
-          />
+          <img src="/Favicon.png" alt="Logotipo NONOS" className="size-6" />
           NONOS
         </span>
         <span>Proyecto en desarrollo, 2026.</span>
